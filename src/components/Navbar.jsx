@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li><a href="#" className='text-gray-600 tracking-wider'>Community </a></li>
                 </ul>
                 <div className="w-2/12 flex justify-end text-sm text-gray-600">
-                    <button className='border-2 font-semibold tracking-wider px-5 py-2 rounded-full '>
+                    <button className='border-2 font-semibold tracking-wider px-5 py-2 rounded-full hover:bg-gray-50 '>
                         Launch app
                     </button>
                 </div>

@@ -8,7 +8,12 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        instrument: ['"Instrument Serif"', 'serif'],
+        pretendard: ['Pretendard'],
       },
+      colors: {
+        Primary: '#0D9488'
+      }
     },
   },
   plugins: [],

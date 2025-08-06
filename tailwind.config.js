@@ -11,6 +11,15 @@ export default {
         instrument: ['"Instrument Serif"', 'serif'],
         pretendard: ['Pretendard'],
       },
+      animation: {
+        marquee: 'scroll 30s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
       colors: {
         Primary: '#0D9488'
       }

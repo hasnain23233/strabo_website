@@ -8,6 +8,7 @@ import img3 from '../assets/img3.png'
 import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import home2Img from '../assets/home2Img.png'
+import client from '../assets/client.png'
 
 
 const home = () => {
@@ -15,8 +16,8 @@ const home = () => {
     return (
         <div className=' font-inter  bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
-                <div className=' border-x-2 border-gray-50 w-9/12 m-auto'>
-                    <div className='pt-12 text-center w-9/12 border-x-2 border-gray-50 m-auto'>
+                <div className=' border-x-2 border-gray-100 w-9/12 m-auto'>
+                    <div className='pt-12 text-center w-9/12 border-x-2 border-gray-100 m-auto'>
                         <span className='border-2 gap-1 flex items-center  w-[140px] m-auto bg-white text-[13px] rounded-full '>
                             <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_ddd_2_11104)">
@@ -74,7 +75,6 @@ const home = () => {
                     <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t to-[#fcfcfcc7] from-[#fcfcfceb] z-10" />
                 </div>
             </div>
-
             <div className="relative overflow-hidden w-11/12 m-auto mt-3 py-8">
                 {/* Left Blur */}
                 <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10" />
@@ -91,15 +91,102 @@ const home = () => {
                     ))}
                 </div>
             </div>
-
-            <div className='w-11/12 border-x-2  border-gray-50 m-auto text-center mt-12'>
-                <h1 className='m-auto text-5xl mt-4 py-3 leading-[60px] font-semibold '>
-                    Bring <span className="text-Primary italic font-serif font-light tracking-normal">order</span> to <br />
-                    the chaos
-                </h1>
-                <div>
-                    <img src={home2Img} alt="" className='w-full' />
+            <div className=' border-x-2  border-gray-100 m-auto text-center mt-12'>
+                <div className='border-b-2 border-gray-100'>
+                    <div className='border-x-2 w-11/12 m-auto border-gray-100'>
+                        <h1 className='m-auto text-5xl mt-4 py-3 leading-[60px] font-semibold '>
+                            Bring <span className="text-Primary italic font-serif font-light tracking-normal">order</span> to <br />
+                            the chaos
+                        </h1>
+                    </div>
                 </div>
+                <div className='w-11/12 m-auto border-x-2 pb-12 border-gray-100'>
+                    <img src={home2Img} alt="" className='w-full' />
+                    <div className='mt-24 flex border-t-2 border-r-2 items-center border-gray-100 h-56 w-10/12 m-auto'>
+                        <div className='border-r-2 border-gray-100 w-4/12 p-4'>
+                            <img src={client} alt="" className='m-auto' />
+                        </div>
+                        <div className='w-8/12 text-start p-4'>
+                            <p className='text-[30px] font-[600]'>
+                                “Tried Strabo for the first time today. Managing stocks and crypto together is a game changer. No going back now”
+                            </p>
+
+                            <p className='mt-6 font-medium'>Cameron Orcutt <span className='text-gray-400'>: Founder, OnLadder</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className=' border-y-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-9/12  m-auto border-gray-100'>
+                        <h1 className='m-auto text-5xl  py-10  leading-[60px] font-semibold '>
+                            Reliable security at  <br />
+                            an <span className="text-Primary italic font-serif font-light tracking-normal">enterprise level</span>
+                        </h1>
+                        <div className='grid grid-cols-2 gap-3 py-3'>
+                            <div className='border-l-2  py-4 border-gray-100'>
+                                <p className='ml-12'>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.688 2.89343C16.5022 2.71731 16.256 2.61914 16 2.61914C15.744 2.61914 15.4978 2.71731 15.312 2.89343C12.4817 5.58127 8.71217 7.0552 4.80934 7.0001C4.59672 6.99733 4.38875 7.06242 4.21564 7.1859C4.04253 7.30938 3.91328 7.48483 3.84668 7.68676C3.28397 9.40165 2.99817 11.1953 3.00001 13.0001C3.00001 20.9228 8.41867 27.5774 15.7507 29.4641C15.9142 29.5063 16.0858 29.5063 16.2493 29.4641C23.5813 27.5774 29 20.9228 29 13.0001C29 11.1468 28.7027 9.3601 28.1533 7.68676C28.087 7.48458 27.9578 7.30884 27.7847 7.1851C27.6115 7.06137 27.4035 6.99609 27.1907 6.99876L27 7.0001C23.0053 7.0001 19.3773 5.4401 16.688 2.89343ZM20.8133 13.5814C20.8933 13.4748 20.9512 13.3533 20.9836 13.224C21.016 13.0947 21.0222 12.9603 21.0018 12.8286C20.9815 12.6969 20.935 12.5705 20.8651 12.457C20.7953 12.3435 20.7034 12.2451 20.595 12.1676C20.4866 12.0901 20.3638 12.0351 20.2338 12.0057C20.1037 11.9764 19.9692 11.9733 19.838 11.9967C19.7068 12.0201 19.5816 12.0695 19.4697 12.142C19.3579 12.2145 19.2616 12.3086 19.1867 12.4188L14.872 18.4588L12.7067 16.2934C12.5171 16.1168 12.2664 16.0206 12.0073 16.0252C11.7482 16.0298 11.5011 16.1347 11.3178 16.3179C11.1346 16.5012 11.0297 16.7483 11.0251 17.0074C11.0205 17.2665 11.1167 17.5172 11.2933 17.7068L14.2933 20.7068C14.396 20.8093 14.5197 20.8883 14.656 20.9383C14.7922 20.9882 14.9377 21.0079 15.0824 20.996C15.227 20.9841 15.3673 20.9408 15.4935 20.8692C15.6197 20.7976 15.7289 20.6994 15.8133 20.5814L20.8133 13.5814Z" fill="#0D9488" />
+                                    </svg>
+                                </p>
+                                <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
+                                    AES 256 encryption
+                                </p>
+                                <p className='pl-12 text-gray-500'>
+                                    Your data is securely encrypted both at rest and in transit, ensuring maximum protection against cyber threats.
+                                </p>
+                            </div>
+                            <div className='border-l-2  py-4 border-gray-100'>
+                                <p className='ml-12'>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 4C6.93913 4 5.92172 4.42143 5.17157 5.17157C4.42143 5.92172 4 6.93913 4 8V10C4 10.2652 4.10536 10.5196 4.29289 10.7071C4.48043 10.8946 4.73478 11 5 11C5.26522 11 5.51957 10.8946 5.70711 10.7071C5.89464 10.5196 6 10.2652 6 10V8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6H10C10.2652 6 10.5196 5.89464 10.7071 5.70711C10.8946 5.51957 11 5.26522 11 5C11 4.73478 10.8946 4.48043 10.7071 4.29289C10.5196 4.10536 10.2652 4 10 4H8ZM22 4C21.7348 4 21.4804 4.10536 21.2929 4.29289C21.1054 4.48043 21 4.73478 21 5C21 5.26522 21.1054 5.51957 21.2929 5.70711C21.4804 5.89464 21.7348 6 22 6H24C24.5304 6 25.0391 6.21071 25.4142 6.58579C25.7893 6.96086 26 7.46957 26 8V10C26 10.2652 26.1054 10.5196 26.2929 10.7071C26.4804 10.8946 26.7348 11 27 11C27.2652 11 27.5196 10.8946 27.7071 10.7071C27.8946 10.5196 28 10.2652 28 10V8C28 6.93913 27.5786 5.92172 26.8284 5.17157C26.0783 4.42143 25.0609 4 24 4H22ZM16 11C14.6739 11 13.4021 11.5268 12.4645 12.4645C11.5268 13.4021 11 14.6739 11 16C11 17.3261 11.5268 18.5979 12.4645 19.5355C13.4021 20.4732 14.6739 21 16 21C17.3261 21 18.5979 20.4732 19.5355 19.5355C20.4732 18.5979 21 17.3261 21 16C21 14.6739 20.4732 13.4021 19.5355 12.4645C18.5979 11.5268 17.3261 11 16 11ZM6 22C6 21.7348 5.89464 21.4804 5.70711 21.2929C5.51957 21.1054 5.26522 21 5 21C4.73478 21 4.48043 21.1054 4.29289 21.2929C4.10536 21.4804 4 21.7348 4 22V24C4 25.0609 4.42143 26.0783 5.17157 26.8284C5.92172 27.5786 6.93913 28 8 28H10C10.2652 28 10.5196 27.8946 10.7071 27.7071C10.8946 27.5196 11 27.2652 11 27C11 26.7348 10.8946 26.4804 10.7071 26.2929C10.5196 26.1054 10.2652 26 10 26H8C7.46957 26 6.96086 25.7893 6.58579 25.4142C6.21071 25.0391 6 24.5304 6 24V22ZM28 22C28 21.7348 27.8946 21.4804 27.7071 21.2929C27.5196 21.1054 27.2652 21 27 21C26.7348 21 26.4804 21.1054 26.2929 21.2929C26.1054 21.4804 26 21.7348 26 22V24C26 24.5304 25.7893 25.0391 25.4142 25.4142C25.0391 25.7893 24.5304 26 24 26H22C21.7348 26 21.4804 26.1054 21.2929 26.2929C21.1054 26.4804 21 26.7348 21 27C21 27.2652 21.1054 27.5196 21.2929 27.7071C21.4804 27.8946 21.7348 28 22 28H24C25.0609 28 26.0783 27.5786 26.8284 26.8284C27.5786 26.0783 28 25.0609 28 24V22Z" fill="#0D9488" />
+                                    </svg>
+
+                                </p>
+                                <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
+                                    Passwordless system
+                                </p>
+                                <p className='pl-12 text-gray-500'>
+                                    A security system that grants unique one-time codes without passwords, using biometrics, magic links, or one-time codes.
+                                </p>
+                            </div>
+                            <div className='border-l-2  py-4 border-gray-100'>
+                                <p className='ml-12'>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00001 13.0001C5.99907 11.1399 6.64643 9.3375 7.83073 7.90298C9.01502 6.46845 10.6622 5.49147 12.489 5.14011C14.3157 4.78875 16.2078 5.08496 17.8397 5.9778C19.4717 6.87064 20.7415 8.30429 21.4307 10.0321C22.1956 9.94431 22.9705 10.0343 23.6949 10.2952C24.4193 10.556 25.0737 10.9806 25.607 11.5359C26.1404 12.0912 26.5383 12.7622 26.7697 13.4965C27.0012 14.2308 27.0599 15.0087 26.9413 15.7695C28.0981 16.4195 29.0068 17.4347 29.5252 18.6562C30.0435 19.8777 30.1424 21.2366 29.8062 22.5203C29.47 23.8039 28.7178 24.9399 27.6672 25.7505C26.6166 26.5611 25.327 27.0006 24 27.0001H9.00001C7.40756 27.0009 5.86245 26.4586 4.61972 25.4629C3.37698 24.4671 2.5109 23.0774 2.16443 21.5231C1.81796 19.9688 2.01181 18.3428 2.71398 16.9136C3.41615 15.4843 4.58468 14.3371 6.02668 13.6615C6.00878 13.4415 5.99988 13.2208 6.00001 13.0001Z" fill="#0D9488" />
+                                    </svg>
+
+
+                                </p>
+                                <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
+                                    Serverless cloud–based architecture
+                                </p>
+                                <p className='pl-12 text-gray-500'>
+                                    A cloud-based architecture that runs applications without servers, scaling automatically as needed and keeping your data secure.
+                                </p>
+                            </div>
+                            <div className='border-l-2  py-4 border-gray-100'>
+                                <p className='ml-12'>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.44 6.96933C5.66712 6.11767 6.16917 5.36488 6.86816 4.82792C7.56715 4.29096 8.42392 3.99991 9.30534 4H22.6933C23.575 3.99962 24.4321 4.29053 25.1313 4.82751C25.8306 5.36449 26.3328 6.11745 26.56 6.96933L29.3773 17.5373C28.1366 16.5401 26.5919 15.9976 25 16H7C5.4077 15.9973 3.86247 16.5398 2.62134 17.5373L5.44 6.96933Z" fill="#0D9488" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 18C6.34339 18 5.69321 18.1293 5.08658 18.3806C4.47995 18.6319 3.92876 19.0002 3.46447 19.4645C3.00017 19.9288 2.63188 20.48 2.3806 21.0866C2.12933 21.6932 2 22.3434 2 23C2 23.6566 2.12933 24.3068 2.3806 24.9134C2.63188 25.52 3.00017 26.0712 3.46447 26.5355C3.92876 26.9998 4.47995 27.3681 5.08658 27.6194C5.69321 27.8707 6.34339 28 7 28H25C25.6566 28 26.3068 27.8707 26.9134 27.6194C27.52 27.3681 28.0712 26.9998 28.5355 26.5355C28.9998 26.0712 29.3681 25.52 29.6194 24.9134C29.8707 24.3068 30 23.6566 30 23C30 22.3434 29.8707 21.6932 29.6194 21.0866C29.3681 20.48 28.9998 19.9288 28.5355 19.4645C28.0712 19.0002 27.52 18.6319 26.9134 18.3806C26.3068 18.1293 25.6566 18 25 18H7ZM21 24C21.2652 24 21.5196 23.8946 21.7071 23.7071C21.8946 23.5196 22 23.2652 22 23C22 22.7348 21.8946 22.4804 21.7071 22.2929C21.5196 22.1054 21.2652 22 21 22C20.7348 22 20.4804 22.1054 20.2929 22.2929C20.1054 22.4804 20 22.7348 20 23C20 23.2652 20.1054 23.5196 20.2929 23.7071C20.4804 23.8946 20.7348 24 21 24ZM26 23C26 23.2652 25.8946 23.5196 25.7071 23.7071C25.5196 23.8946 25.2652 24 25 24C24.7348 24 24.4804 23.8946 24.2929 23.7071C24.1054 23.5196 24 23.2652 24 23C24 22.7348 24.1054 22.4804 24.2929 22.2929C24.4804 22.1054 24.7348 22 25 22C25.2652 22 25.5196 22.1054 25.7071 22.2929C25.8946 22.4804 26 22.7348 26 23Z" fill="#0D9488" />
+                                    </svg>
+
+
+
+                                </p>
+                                <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
+                                    No third-party data sharing
+                                </p>
+                                <p className='pl-12 text-gray-500'>
+                                    We do not share any user data with third parties, ensuring strict privacy protection and enhanced security for all sensitive information
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

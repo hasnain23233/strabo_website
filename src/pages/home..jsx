@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesLeft, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesLeft, faUser, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Dashbord from '../assets/Dashbord.png'
 import img from '../assets/img.png'
 import img2 from '../assets/img2.png'
@@ -9,6 +9,7 @@ import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import home2Img from '../assets/home2Img.png'
 import client from '../assets/client.png'
+import beckgroundImg from '../assets/beckgroundImg.png'
 
 
 const home = () => {
@@ -133,7 +134,7 @@ const home = () => {
                                 <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
                                     AES 256 encryption
                                 </p>
-                                <p className='pl-12 text-gray-500'>
+                                <p className='pl-12 text-gray-500 font-pretendard'>
                                     Your data is securely encrypted both at rest and in transit, ensuring maximum protection against cyber threats.
                                 </p>
                             </div>
@@ -147,7 +148,7 @@ const home = () => {
                                 <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
                                     Passwordless system
                                 </p>
-                                <p className='pl-12 text-gray-500'>
+                                <p className='pl-12 text-gray-500 font-pretendard'>
                                     A security system that grants unique one-time codes without passwords, using biometrics, magic links, or one-time codes.
                                 </p>
                             </div>
@@ -162,7 +163,7 @@ const home = () => {
                                 <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
                                     Serverless cloud–based architecture
                                 </p>
-                                <p className='pl-12 text-gray-500'>
+                                <p className='pl-12 text-gray-500 font-pretendard'>
                                     A cloud-based architecture that runs applications without servers, scaling automatically as needed and keeping your data secure.
                                 </p>
                             </div>
@@ -179,11 +180,103 @@ const home = () => {
                                 <p className='pl-12 border-l-2 border-Primary leading-loose mt-3 text-lg'>
                                     No third-party data sharing
                                 </p>
-                                <p className='pl-12 text-gray-500'>
+                                <p className='pl-12 text-gray-500 font-pretendard'>
                                     We do not share any user data with third parties, ensuring strict privacy protection and enhanced security for all sensitive information
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-9/12  m-auto border-gray-100 '>
+                        <br /><br /><br />
+                        <div className="relative h-[330px] ">
+                            <div>
+                                <img src={beckgroundImg} alt="logo" className="w-full h-full" />
+                            </div>
+                            <div className='absolute bottom-16 text-center w-full'>
+                                <p className='m-auto  w-1/12'>
+                                    <svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33 34.5312C31.8782 34.5312 30.9688 33.6218 30.9688 32.5C30.9688 31.3782 31.8782 30.4688 33 30.4688C34.1218 30.4688 35.0312 31.3782 35.0312 32.5C35.0312 33.6218 34.1218 34.5312 33 34.5312Z" fill="#0D9488" />
+                                        <path d="M33 32.5004L31.839 33.1972C32.0835 33.6051 32.5244 33.8545 33 33.8545C33.4756 33.8545 33.9165 33.6051 34.1614 33.1972L33 32.5004ZM18.5988 11.1305L31.839 33.1972L34.1614 31.8038L20.9212 9.73708L18.5988 11.1305ZM34.1614 33.1972L47.4013 11.1305L45.0789 9.73711L31.839 31.8038L34.1614 33.1972ZM33 56.8748C19.5381 56.8748 8.62502 45.9619 8.62502 32.4998H5.91669C5.91669 47.4574 18.0423 59.5832 33 59.5832V56.8748ZM8.62502 32.4998C8.62502 19.0379 19.5381 8.12484 33 8.12484V5.4165C18.0423 5.4165 5.91669 17.5421 5.91669 32.4998H8.62502ZM33 8.12484C46.4621 8.12484 57.375 19.0379 57.375 32.4998H60.0834C60.0834 17.5421 47.9576 5.4165 33 5.4165V8.12484ZM57.375 32.4998C57.375 45.9619 46.4621 56.8748 33 56.8748V59.5832C47.9576 59.5832 60.0834 47.4574 60.0834 32.4998H57.375ZM33 45.8487C25.5212 45.8487 19.4584 39.7861 19.4584 32.307H16.75C16.75 41.2816 24.0254 48.557 33 48.557V45.8487ZM46.5417 32.307C46.5417 39.7861 40.4788 45.8487 33 45.8487V48.557C41.9746 48.557 49.25 41.2816 49.25 32.307H46.5417ZM39.9672 20.6926C43.9092 23.063 46.5417 27.3784 46.5417 32.307H49.25C49.25 26.389 46.0856 21.2113 41.3628 18.3716L39.9672 20.6926ZM19.4584 32.307C19.4584 27.3784 22.0908 23.063 26.0328 20.6926L24.6372 18.3716C19.9145 21.2113 16.75 26.389 16.75 32.307H19.4584ZM33 33.1769C32.626 33.1769 32.3229 32.8739 32.3229 32.4998H29.6146C29.6146 34.3697 31.1302 35.8853 33 35.8853V33.1769ZM32.3229 32.4998C32.3229 32.1258 32.626 31.8228 33 31.8228V29.1144C31.1302 29.1144 29.6146 30.63 29.6146 32.4998H32.3229ZM33 31.8228C33.374 31.8228 33.6771 32.1258 33.6771 32.4998H36.3854C36.3854 30.63 34.8699 29.1144 33 29.1144V31.8228ZM33.6771 32.4998C33.6771 32.8739 33.374 33.1769 33 33.1769V35.8853C34.8699 35.8853 36.3854 34.3697 36.3854 32.4998H33.6771Z" fill="#0D9488" />
+                                    </svg>
+
+                                </p>
+                                <h1 className="text-2xl md:text-4xl font-semibold text-gray-800">
+                                    Discover new ways to <br />
+                                    grow your <span className="text-Primary italic font-serif font-light tracking-normal">wealth</span>
+                                </h1>
+                                <p className="mt-4 text-sm md:text-base text-gray-600">
+                                    Put your money to work with our suite of bespoke <br />
+                                    investment products
+                                </p>
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-3 border-x-2 border-gray-100 gap-3'>
+                            <div className=' p-4 border-gray-100'>
+                                <p className='leading-loose font-semibold'>
+                                    Infrastructure Investments
+                                </p>
+                                <p className=' font-pretendard text-sm text-gray-800'>
+                                    Invest in large-scale projects that power economies and drive progress.
+                                </p>
+                            </div>
+                            <div className=' p-4 border-gray-100'>
+                                <p className='leading-loose text-gray-500 font-semibold'>
+                                    P2P Lending
+                                </p>
+                                <p className=' text-gray-500 font-pretendard text-sm'>
+                                    Earn competitive returns by lending directly to individuals and businesses.
+                                </p>
+                            </div>
+                            <div className=' p-4 border-gray-100'>
+                                <p className='leading-loose text-gray-500 font-semibold '>
+                                    Real-Time Home Insurance
+                                </p>
+                                <p className=' text-gray-500 font-pretendard text-sm'>
+                                    A smarter, more responsive way to protect your property and finances.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-9/12 border-x-2  m-auto border-gray-100 '>
+                        <div className="">
+                            <div className='border-b-2 border-gray-100 flex items-center'>
+                                <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-4/12'>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                    </svg>
+                                    <p className='text-sm text-gray-400'>Stable, long-term returns from</p>
+                                </p>
+                                <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-2/12'>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                    </svg>
+                                    <p className='text-sm text-gray-400'>volatility</p>
+                                </p>
+                                <p className='flex items-center gap-2 p-2  w-4/12'>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                    </svg>
+                                    <p className='text-sm text-gray-400'>Sustainable impact through funding.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div className=' mt-24 text-center'>
+                            <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full text-white text-[13px] p-4'>
+                                <p className='text-gray-500 border-r border-gray-500 w-5/12'>Coming soon!</p>
+                                <p className='text-white  w-7/12 gap-2 flex items-center'>Be the first to know <FontAwesomeIcon icon={faArrowRight} /></p>
+                            </button>
+                        </div>
+                        <br /><br />
                     </div>
                 </div>
 

@@ -8,6 +8,7 @@ import img3 from '../assets/img3.png'
 import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import home2Img from '../assets/home2Img.png'
+import home3Img from '../assets/home3Img.png'
 import client from '../assets/client.png'
 import beckgroundImg from '../assets/beckgroundImg.png'
 
@@ -271,17 +272,24 @@ const home = () => {
                             </div>
                         </div>
                         <div className=' mt-24 text-center'>
-                            <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full text-white text-[13px] p-4'>
+                            <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full hover:bg-gray-700 text-white text-[13px] p-4'>
                                 <p className='text-gray-500 border-r border-gray-500 w-5/12'>Coming soon!</p>
                                 <p className='text-white  w-7/12 gap-2 flex items-center'>Be the first to know <FontAwesomeIcon icon={faArrowRight} /></p>
                             </button>
                         </div>
                         <br /><br />
+                        <div className="text-start mt-6">
+                            <h1 className='m-auto text-5xl px-3  py-10  leading-[60px] font-semibold '>
+                                Financial guidance  <br />
+                                an <span className="text-Primary italic font-serif font-light tracking-normal">the experts</span>
+                            </h1>
+                            <img src={home3Img} alt="" />
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 

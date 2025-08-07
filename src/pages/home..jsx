@@ -308,7 +308,7 @@ const home = () => {
             </div>
             <div className=' border-b-2 w-full border-gray-100 m-auto '>
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
-                    <div className='w-9/12  m-auto '>
+                    <div className='w-11/12  m-auto '>
                         <FaqSection />
                     </div>
                 </div>

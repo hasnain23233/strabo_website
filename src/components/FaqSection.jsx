@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesLeft, faUser, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const faqData = [
     {
@@ -44,13 +46,15 @@ const FaqSection = () => {
     return (
         <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-10 font-inter">
             {/* Left Side */}
-            <div>
-                <h2 className="text-4xl font-semibold">Frequently asked</h2>
-                <p className="text-teal-600 italic text-4xl mb-6 font-instrument">questions</p>
-                <div className="bg-gray-50 border rounded-lg p-4">
+            <div className="flex flex-col justify-between">
+                <div>
+                    <h2 className="text-4xl font-semibold">Frequently asked</h2>
+                    <p className="text-teal-600 italic text-4xl mb-6 font-instrument">questions</p>
+                </div>
+                <div className="border-t-2 border-gray-100 p-4">
                     <p className="mb-4">Want to know more about the company, product, or team? You can reach out directly here</p>
-                    <button className="bg-white border border-gray-400 rounded-full px-4 py-2 text-sm hover:shadow">
-                        Contact Us →
+                    <button className="bg-white border-2 text-gray-700 border-gray-100 rounded-full px-4 py-2 text-sm hover:shadow">
+                        Contact Us <FontAwesomeIcon icon={faArrowRight} />
                     </button>
                 </div>
             </div>

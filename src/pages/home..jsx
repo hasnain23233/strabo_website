@@ -11,6 +11,7 @@ import home2Img from '../assets/home2Img.png'
 import home3Img from '../assets/home3Img.png'
 import client from '../assets/client.png'
 import beckgroundImg from '../assets/beckgroundImg.png'
+import FaqSection from '../components/FaqSection';
 
 
 const home = () => {
@@ -248,34 +249,36 @@ const home = () => {
             </div>
             <div className=' border-b-2 w-full border-gray-100 m-auto '>
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
-                    <div className='w-9/12 border-x-2  m-auto border-gray-100 '>
-                        <div className="">
-                            <div className='border-b-2 border-gray-100 flex items-center'>
-                                <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-4/12'>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
-                                    </svg>
-                                    <p className='text-sm text-gray-400'>Stable, long-term returns from</p>
-                                </p>
-                                <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-2/12'>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
-                                    </svg>
-                                    <p className='text-sm text-gray-400'>volatility</p>
-                                </p>
-                                <p className='flex items-center gap-2 p-2  w-4/12'>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
-                                    </svg>
-                                    <p className='text-sm text-gray-400'>Sustainable impact through funding.</p>
-                                </p>
+                    <div className='w-9/12 m-auto  '>
+                        <div className='w-full border-x-2 border-gray-100'>
+                            <div className="">
+                                <div className='border-b-2 border-gray-100 flex items-center'>
+                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-4/12'>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                        </svg>
+                                        <p className='text-sm text-gray-400'>Stable, long-term returns from</p>
+                                    </p>
+                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-2/12'>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                        </svg>
+                                        <p className='text-sm text-gray-400'>volatility</p>
+                                    </p>
+                                    <p className='flex items-center gap-2 p-2  w-4/12'>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
+                                        </svg>
+                                        <p className='text-sm text-gray-400'>Sustainable impact through funding.</p>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className=' mt-24 text-center'>
-                            <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full hover:bg-gray-700 text-white text-[13px] p-4'>
-                                <p className='text-gray-500 border-r border-gray-500 w-5/12'>Coming soon!</p>
-                                <p className='text-white  w-7/12 gap-2 flex items-center'>Be the first to know <FontAwesomeIcon icon={faArrowRight} /></p>
-                            </button>
+                            <div className=' mt-24 text-center'>
+                                <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full hover:bg-gray-700 text-white text-[13px] p-4'>
+                                    <p className='text-gray-500 border-r border-gray-500 w-5/12'>Coming soon!</p>
+                                    <p className='text-white  w-7/12 gap-2 flex items-center'>Be the first to know <FontAwesomeIcon icon={faArrowRight} /></p>
+                                </button>
+                            </div>
                         </div>
                         <br /><br />
                         <div className="text-start mt-6">
@@ -285,6 +288,28 @@ const home = () => {
                             </h1>
                             <img src={home3Img} alt="" />
                         </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-9/12  m-auto  text-center'>
+                        <br /><br />
+                        <div className="mt-6">
+                            <h1 className='m-auto text-4xl px-3 w-8/12 text-gray-900  py-10  leading-[60px] font-semibold '>
+                                Tried Strabo? Making life easier managing my French & UK finances together 🙏
+                                <p className='text-gray-800 font-semibold tracking-wider text-sm mt-4'>Lucy Woolfenden<span className='text-gray-500 font-light'> : Founder, The Scale Up Collective</span></p>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-9/12  m-auto '>
+                        <FaqSection />
                     </div>
                 </div>
 

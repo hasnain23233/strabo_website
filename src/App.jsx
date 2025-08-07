@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/home.'
+import Footer from './components/footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,8 +13,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-
-      <h1 className='text-red-400'>This is a main page of the website</h1>
+      <Footer />
     </>
   )
 }

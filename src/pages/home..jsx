@@ -9,6 +9,8 @@ import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import home2Img from '../assets/home2Img.png'
 import home3Img from '../assets/home3Img.png'
+import home4Img from '../assets/home34Img.png'
+import home5Img from '../assets/home5Img.png'
 import client from '../assets/client.png'
 import beckgroundImg from '../assets/beckgroundImg.png'
 import FaqSection from '../components/FaqSection';
@@ -310,6 +312,54 @@ const home = () => {
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
                     <div className='w-11/12  m-auto '>
                         <FaqSection />
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-11/12 m-auto  '>
+                        <div className="text-start  flex items-center justify-between">
+                            <h1 className='m-auto text-5xl w-6/12 px-3 py-10  leading-[60px] font-semibold '>
+                                We’re along for <br />
+                                <span className="text-Primary italic font-serif font-light tracking-normal">the ride</span>
+                            </h1>
+                            <p className='w-6/12 flex justify-end'>
+                                Join thousands of users in 12+ countries <br /> managing their assets with Strabo
+                            </p>
+                        </div>
+                        <img src={home4Img} alt="" />
+                        <h1 className='m-auto text-4xl text-center mt-12  px-3 py-10  leading-[60px] font-semibold '>
+                            Our ears are  <span className="text-Primary italic font-serif font-light tracking-normal">burning</span>
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-full m-auto text-center '>
+                        <img src={home5Img} alt="" className='w-full' />
+                        <button className="bg-white border-2 text-gray-700 border-gray-100 rounded-full px-4 py-2 mt-12 text-sm hover:shadow">
+                            See all case studies <FontAwesomeIcon icon={faArrowRight} />
+                        </button>
+                        <br /><br />
+                    </div>
+                </div>
+
+            </div>
+            <div className=' border-b-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
+                    <div className='w-full m-auto text-center '>
+                        <h1 className='m-auto text-4xl text-center pt-12   leading-[60px] font-semibold '>
+                            Join our  <span className="text-Primary italic font-serif font-light tracking-normal">newsletter</span>
+                        </h1>
+                        <p className='text-gray-600'>Want to keep track of what we're up to without the commitment? <br /> You can sign up to the newsletter below.</p>
+                        <input type="text" name="text" className='px-4 w-3/12 focus:outline-none py-2 rounded-2xl text-sm border-2 border-gray-100' id="" placeholder='Enter your email Address' />
+                        <button className="bg-gray-800 text-white border-2 text-sm border-gray-100 rounded-full px-4 py-2 mt-12 hover:shadow ml-3">
+                            Contact Us
+                        </button>
+                        <br /><br />
                     </div>
                 </div>
 

@@ -1,61 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../assets/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import DropdownPlatfom from './DropdownPlatfom';
+import DropdownResourse from './DropdownResourse';
 
-const Dropdown = ({ title, items }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const dropdownRef = useRef(null);
 
-    // Close dropdown if clicked outside
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
-    return (
-        <div className="relative" ref={dropdownRef}>
-            <button
-                onClick={() => setIsOpen((prev) => !prev)}
-                className="text-gray-600 tracking-wider flex items-center gap-2 focus:outline-none"
-            >
-                {title}
-                <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className={`text-xs transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-                />
-            </button>
-
-            {isOpen && (
-                <div className="absolute top-8 left-0 bg-white shadow-lg border rounded-md py-2 px-4 z-10 w-44 transition-all duration-200">
-                    {items.map((item, index) => (
-                        <a
-                            key={index}
-                            href={item.href}
-                            className="block px-2 py-1 text-sm text-gray-700 hover:bg-gray-100 rounded"
-                        >
-                            {item.label}
-                        </a>
-                    ))}
-                </div>
-            )}
-        </div>
-    );
-};
 
 const Navbar = () => {
-    const platformLinks = [
-        { label: 'Overview', href: '#' },
-        { label: 'Features', href: '#' },
-        { label: 'Security', href: '#' },
-    ];
 
     const resourceLinks = [
         { label: 'Docs', href: '#' },
@@ -73,10 +23,10 @@ const Navbar = () => {
 
                 <ul className="w-6/12 text-sm flex justify-evenly items-center gap-4 relative">
                     <li>
-                        <Dropdown title="Platform" items={platformLinks} />
+                        <DropdownPlatfom />
                     </li>
                     <li>
-                        <Dropdown title="Resources" items={resourceLinks} />
+                        <DropdownResourse />
                     </li>
                     <li>
                         <a href="#" className="text-gray-600 tracking-wider">Customers</a>

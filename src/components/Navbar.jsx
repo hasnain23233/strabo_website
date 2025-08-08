@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../assets/logo.png';
 import DropdownPlatfom from './DropdownPlatfom';
 import DropdownResourse from './DropdownResourse';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +19,7 @@ const Navbar = () => {
             <header className="h-16 w-11/12 m-auto flex justify-between items-center">
                 <div className="flex items-center gap-2 w-2/12">
                     <img src={Logo} alt="Logo" />
-                    <p className="text-xl font-semibold tracking-wider text-gray-800">strabo</p>
+                    <Link to={'/'} className="text-xl font-semibold tracking-wider text-gray-800">strabo</Link>
                 </div>
 
                 <ul className="w-6/12 text-sm flex justify-evenly items-center gap-4 relative">
@@ -29,7 +30,7 @@ const Navbar = () => {
                         <DropdownResourse />
                     </li>
                     <li>
-                        <a href="#" className="text-gray-600 tracking-wider">Customers</a>
+                        <Link to="/customers" className="text-gray-600 tracking-wider">Customers</Link>
                     </li>
                     <li>
                         <a href="#" className="text-gray-600 tracking-wider">Plans</a>

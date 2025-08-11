@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import home6Img from '../assets/home6Img.png'
+import { Link } from 'react-router-dom';
 
 const DropdownResourse = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const DropdownResourse = () => {
                 onClick={() => setIsOpen((prev) => !prev)}
                 className="text-gray-600 tracking-wider flex items-center gap-2 focus:outline-none"
             >
-                Platform
+                Resourse
                 <FontAwesomeIcon
                     icon={faChevronDown}
                     className={`text-xs transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
@@ -37,7 +37,7 @@ const DropdownResourse = () => {
                 <div className="absolute top-8 left-0 w-[400px]  bg-white shadow-xl border rounded-xl   px-4 z-10 transition-all duration-200">
                     <div className='flex flex-col gap-2'>
                         <ul className='w-full  flex flex-col justify-between  px-1 py-2'>
-                            <h1 className='text-gray-300 leading-loose uppercase text-sm '>Platform</h1>
+                            <h1 className='text-gray-300 leading-loose uppercase text-sm '>Resourse</h1>
                             <li>
                                 <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
                                     <div className='flex gap-2  items-center'>
@@ -66,7 +66,7 @@ const DropdownResourse = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
+                                <Link to="/blog_articals" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
                                     <div className='flex gap-2  items-center'>
                                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2_15519)">
@@ -95,7 +95,7 @@ const DropdownResourse = () => {
                                         </div>
                                     </div>
                                     <p><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>

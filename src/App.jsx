@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Customers from './pages/Customers'
 import StrabloForAdviser from './pages/strabloForAdviser'
+import BlogArtical from './pages/blogArtical'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/strabo_for_advisers' element={<StrabloForAdviser />} />
+          <Route path='//blog_articals' element={< BlogArtical />} />
         </Routes>
         <Footer />
       </Router>

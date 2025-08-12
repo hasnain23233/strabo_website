@@ -71,7 +71,7 @@ const Glossary = () => {
       </div>
 
       {/* Alphabet Navigation */}
-      <div className="overflow-x-auto border-y border-gray-200">
+      <div className="overflow-x-auto border-t-2 border-gray-200">
         <div className="flex justify-between w-8/12 m-auto space-x-3 px-4 py-3 text-sm font-medium">
           {alphabet.map((letter) => (
             <a

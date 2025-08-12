@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const BlogArtical = () => {
     const cards = [
@@ -70,7 +71,7 @@ const BlogArtical = () => {
             <div className='w-11/12 m-auto flex items-center gap-4 justify-between mt-10'>
                 <ul className='flex items-center justify-between gap-3 w-10/12'>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>All Categories</li>
-                    <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Investing</li>
+                    <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'><Link to={'/InvestmentFeatures'}> Investing</Link></li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Financial Independence</li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Company Updates</li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Saving</li>

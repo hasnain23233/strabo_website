@@ -8,12 +8,6 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-    const resourceLinks = [
-        { label: 'Docs', href: '#' },
-        { label: 'API Reference', href: '#' },
-        { label: 'Blog', href: '#' },
-    ];
-
     return (
         <div className="border-b-2 border-gray-100 font-inter">
             <header className="h-16 w-11/12 m-auto flex justify-between items-center">
@@ -33,7 +27,7 @@ const Navbar = () => {
                         <Link to="/customers" className="text-gray-600 tracking-wider">Customers</Link>
                     </li>
                     <li>
-                        <a href="#" className="text-gray-600 tracking-wider">Plans</a>
+                        <Link to="/plan" className="text-gray-600 tracking-wider">Plans</Link>
                     </li>
                     <li>
                         <a href="#" className="text-gray-600 tracking-wider">Community</a>

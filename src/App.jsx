@@ -17,6 +17,7 @@ import InvestmentFeatures from './pages/InvestmentFeatures'
 import Glossary from './pages/Glossary'
 import GetStarted from './pages/GetStarted'
 import Documentation from './pages/Documentation'
+import Plan from './pages/Plan'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,7 @@ function App() {
           <Route path='/get-started' element={< GetStarted />} />
           <Route path='/doc' element={< Documentation />} />
           <Route path='/glossary' element={< Glossary />} />
+          <Route path='/plan' element={< Plan />} />
         </Routes>
         <Footer />
       </Router>

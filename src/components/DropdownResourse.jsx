@@ -162,7 +162,7 @@ const DropdownResourse = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
+                                    <Link to="/doc" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
                                         <div className='flex gap-2  items-center'>
                                             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_2_15559)">
@@ -190,7 +190,7 @@ const DropdownResourse = () => {
                                             </div>
                                         </div>
                                         <p><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></p>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

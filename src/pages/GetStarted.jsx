@@ -180,14 +180,6 @@ const GetStarted = () => {
                         </p>
                     </div>
                     <div className='mt-8'>
-                        <h1 className='text-4xl text-gray-700 font-semibold'>Tags</h1>
-                        <p className='text-gray-600 mt-3'>
-                            <p className='py-2'>
-                                Account tagging is a system we’ve implemented to allow you to tag and segment accounts into groups. This means that you can separate your accounts into chunks based on their purpose - financial independence, children’s education fund, retirement, or for a specific goal like a holiday. You can then track this group towards their goal on your dashboard.
-                            </p>
-                        </p>
-                    </div>
-                    <div className='mt-8'>
                         <h1 className='text-4xl text-gray-700 font-semibold'>What's Next?</h1>
                         <p className='text-gray-600 mt-3'>
                             <p className='py-2'>

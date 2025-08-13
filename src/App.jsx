@@ -16,6 +16,7 @@ import BlogArtical from './pages/blogArtical'
 import InvestmentFeatures from './pages/InvestmentFeatures'
 import Glossary from './pages/Glossary'
 import GetStarted from './pages/GetStarted'
+import Documentation from './pages/Documentation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
           <Route path='//blog_articals' element={< BlogArtical />} />
           <Route path='/InvestmentFeatures' element={< InvestmentFeatures />} />
           <Route path='/get-started' element={< GetStarted />} />
+          <Route path='/doc' element={< Documentation />} />
           <Route path='/glossary' element={< Glossary />} />
         </Routes>
         <Footer />

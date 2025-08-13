@@ -39,7 +39,7 @@ const DropdownResourse = () => {
                         <ul className='w-full  flex flex-col justify-between  px-1 py-2'>
                             <h1 className='text-gray-300 leading-loose uppercase text-sm '>Resourse</h1>
                             <li>
-                                <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
+                                <Link to="/get-started" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
                                     <div className='flex gap-2  items-center'>
                                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2_15507)">
@@ -63,7 +63,7 @@ const DropdownResourse = () => {
                                         </div>
                                     </div>
                                     <p><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <Link to="/blog_articals" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>

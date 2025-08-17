@@ -45,19 +45,21 @@ const FAQ = () => {
             <div className="w-10/12 m-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
                 {/* Left Side */}
-                <div>
-                    <h1 className="text-3xl font-semibold leading-snug">
-                        Frequently asked <br />
-                        <span className="text-Primary italic font-serif font-light">
-                            questions
-                        </span>
-                    </h1>
+                <div className=" flex flex-col justify-between">
+                    <div>
+                        <h1 className="text-3xl font-semibold leading-snug ">
+                            Frequently asked <br />
+                            <span className="text-Primary italic font-serif font-light">
+                                questions
+                            </span>
+                        </h1>
 
-                    <p className="text-gray-600 mt-6">
-                        Want to know more about the company, product, or team?
-                        You can reach out directly here
-                    </p>
+                        <p className="text-gray-600 mt-6">
+                            Want to know more about the company, product, or team?
+                            You can reach out directly here
+                        </p>
 
+                    </div>
                     <button className="mt-4 px-5 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
                         Contact Us →
                     </button>

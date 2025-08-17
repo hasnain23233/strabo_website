@@ -14,6 +14,7 @@ import home5Img from '../assets/home5Img.png'
 import client from '../assets/client.png'
 import beckgroundImg from '../assets/beckgroundImg.png'
 import FaqSection from '../components/FaqSection';
+import Slider from '../components/Slider';
 
 
 const home = () => {
@@ -80,22 +81,7 @@ const home = () => {
                     <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t to-[#fcfcfcc7] from-[#fcfcfceb] z-10" />
                 </div>
             </div>
-            <div className="relative overflow-hidden w-11/12 m-auto mt-3 py-8">
-                {/* Left Blur */}
-                <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10" />
-                {/* Right Blur */}
-                <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10" />
-
-                <div className="animate-marquee flex justify-between  w-full  gap-8">
-                    {[...images, ...images].map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`image-${index}`}
-                        />
-                    ))}
-                </div>
-            </div>
+            <Slider />
             <div className=' border-x-2  border-gray-100 m-auto text-center mt-12'>
                 <div className='border-b-2 border-gray-100'>
                     <div className='border-x-2 w-11/12 m-auto border-gray-100'>

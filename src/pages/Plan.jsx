@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Slider from '../components/Slider'
 
 const Plan = () => {
     const [text, setText] = useState(true)
@@ -23,11 +24,8 @@ const Plan = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-t-2 border-gray-100 ">
-
-
-                    <div className="flex justify-center items-start gap-8 pb-20">
-
+                <div className="border-y-2 border-gray-100 ">
+                    <div className="flex justify-center items-start gap-8 ">
                         {/* Pro Plan */}
                         <div className="bg-white shadow-xl rounded-2xl p-6 w-80">
                             <h2 className="text-xl font-semibold mb-2">Pro Plan</h2>
@@ -71,6 +69,7 @@ const Plan = () => {
                         </div>
                     </div>
                 </div>
+                <Slider />
             </div>
         </div>
     )

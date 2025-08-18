@@ -208,6 +208,130 @@ const Feature = () => {
                     </div>
                     <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
                 </div>
+                <div className=" flex items-center flex-row-reverse p-2">
+                    <div className=" px-12 py-28 w-6/12">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                Flexible widgets
+                            </h2>
+                            <p className="text-gray-600 mb-6">
+                                Populate new pages with flexible, configurable widgets from our growing list, or suggest more
+                            </p>
+
+                            <div className="space-y-3  rounded-md p-4">
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Configure widgets by account, asset or country
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Group and filter by tagged accounts
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Drag and drop widgets throughout pages
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button className="mt-6 inline-flex items-center px-5 py-2 rounded-full border-2 bg-white border-gray-100 text-gray-800 hover:bg-gray-200 transition">
+                                Learn more →
+                            </button>
+                        </div>
+                    </div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                </div>
+                <div className=" flex items-center p-2">
+                    <div className=" px-12 py-28 w-6/12">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                Strabo AI
+                            </h2>
+                            <p className="text-gray-600 mb-6">
+                                You'll use Strabo AI to generate reports, summarise pages and populate your widgets
+                            </p>
+
+                            <div className="space-y-3  rounded-md p-4">
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Retrieve portfolio insights as your assets grow
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Check diversification, performance and price changes
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Generate charts, graphics & suggestions
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button className="mt-6 inline-flex items-center px-5 py-2 rounded-full border-2 bg-white border-gray-100 text-gray-800 hover:bg-gray-200 transition">
+                                Learn more →
+                            </button>
+                        </div>
+                    </div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                </div>
+                <div className=" flex items-center flex-row-reverse p-2">
+                    <div className=" px-12 py-28 w-6/12">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                Collectibles
+                            </h2>
+                            <p className="text-gray-600 mb-6">
+                                Why stick to stocks and bonds? Sync up your sneakers, paintings, cars and trading cards
+                            </p>
+
+                            <div className="space-y-3  rounded-md p-4">
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Add vehicles, trading cards and more to your portfolio
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3 border-b border-dotted border-gray-300 pb-2">
+                                    <FaCheckCircle className="text-Primary w-5 h-5" />
+                                    <p className="text-gray-800">
+                                        Gain real time price information using our AI estimator
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button className="mt-6 inline-flex items-center px-5 py-2 rounded-full border-2 bg-white border-gray-100 text-gray-800 hover:bg-gray-200 transition">
+                                coming soon
+                            </button>
+                        </div>
+                    </div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                </div>
+            </div>
+            <div className=' border-y-2 w-full border-gray-100 m-auto '>
+                <div className='border-x-2 border-gray-100 w-10/12 m-auto'>
+                    <div className='w-full m-auto text-center '>
+                        <h1 className='m-auto text-4xl text-center pt-12   leading-[60px] font-semibold '>
+                            Join our  <span className="text-Primary italic font-serif font-light tracking-normal">newsletter</span>
+                        </h1>
+                        <p className='text-gray-600'>Want to keep track of what we're up to without the commitment? <br /> You can sign up to the newsletter below.</p>
+                        <input type="text" name="text" className='px-4 w-3/12 focus:outline-none py-2 rounded-2xl text-sm border-2 border-gray-100' id="" placeholder='Enter your email Address' />
+                        <button className="bg-gray-800 text-white border-2 text-sm border-gray-100 rounded-full px-4 py-2 mt-4 hover:shadow ml-3">
+                            Contact Us
+                        </button>
+                        <br /><br />
+                    </div>
+                </div>
+
             </div>
         </div>
     )

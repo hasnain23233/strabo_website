@@ -35,9 +35,9 @@ const DropdownPlatfom = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-8 left-0 w-[700px]  bg-white shadow-xl border rounded-xl   px-4 z-10 transition-all duration-200">
+                <div className="absolute top-8 left-0 lg:w-[700px] w-[300px]   bg-white shadow-xl border rounded-xl   px-4 z-10 transition-all duration-200">
                     <div className='flex gap-2'>
-                        <ul className='w-7/12 border-r-2  flex flex-col justify-between border-gray-100 px-1 py-2'>
+                        <ul className='lg:w-7/12 w-full lg:border-r-2  flex flex-col justify-between border-gray-100 px-1 py-2'>
                             <h1 className='text-gray-300 leading-loose uppercase text-sm '>Platform</h1>
                             <li>
                                 <Link to="/feature" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
@@ -129,7 +129,7 @@ const DropdownPlatfom = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <ul className='w-5/12  px-1 py-2'>
+                        <ul className='w-5/12  px-1 py-2 lg:block hidden'>
                             <h1 className='text-gray-300 leading-loose uppercase text-sm '>changelog</h1>
                             <li className='flex flex-col justify-evenly h-full'>
                                 <a href="#" className='flex justify-between items-center p-3rounded-lg'>

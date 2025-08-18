@@ -34,7 +34,7 @@ const DropdownResourse = () => {
             </button>
 
             {isOpen && (
-                <div className="absolute top-8 left-0 w-[400px]  bg-white shadow-xl border rounded-xl   px-4 z-10 transition-all duration-200">
+                <div className="absolute top-8 left-0  lg:w-[400px] w-[300px]   bg-white shadow-xl border rounded-xl   px-4 z-10 transition-all duration-200">
                     <div className='flex flex-col gap-2'>
                         <ul className='w-full  flex flex-col justify-between  px-1 py-2'>
                             <h1 className='text-gray-300 leading-loose uppercase text-sm '>Resourse</h1>

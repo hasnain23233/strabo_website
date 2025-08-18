@@ -2,11 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesLeft, faUser, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Dashbord from '../assets/Dashbord.png'
-import img from '../assets/img.png'
-import img2 from '../assets/img2.png'
-import img3 from '../assets/img3.png'
-import img4 from '../assets/img4.png'
-import img5 from '../assets/img5.png'
 import home2Img from '../assets/home2Img.png'
 import home3Img from '../assets/home3Img.png'
 import home4Img from '../assets/home34Img.png'
@@ -18,12 +13,11 @@ import Slider from '../components/Slider';
 
 
 const home = () => {
-    const images = [img, img2, img3, img4, img5];
     return (
         <div className=' font-inter  bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
-                <div className=' border-x-2 border-gray-100 w-9/12 m-auto'>
-                    <div className='pt-12 text-center w-9/12 border-x-2 border-gray-100 m-auto'>
+                <div className=' border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
+                    <div className='pt-12 text-center lg:w-9/12 w-11/12 border-x-2 border-gray-100 m-auto'>
                         <span className='border-2 gap-1 flex items-center  w-[140px] m-auto bg-white text-[13px] rounded-full '>
                             <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_ddd_2_11104)">
@@ -59,15 +53,15 @@ const home = () => {
                             </svg>
                             Strabo AI is live
                         </span>
-                        <h1 className='m-auto text-5xl mt-4  leading-[60px] font-semibold '>
+                        <h1 className='m-auto xl:xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Manage your wealth <br />
                             like <span className="text-Primary italic font-serif font-light tracking-normal">never before</span>
                         </h1>
-                        <p className='text-gray-500 text-xl mt-6 font-pretendard'>
+                        <p className='text-gray-500 lg:text-xl mt-6 font-pretendard'>
                             Track, forecast & get advice in one place to grow <br /> your assets with Strabo.
                         </p>
-                        <button className='bg-Primary text-white flex gap-2 justify-center m-auto w-3/12 py-3 rounded-full mt-6'>Get Started <p className='-rotate-180'><FontAwesomeIcon icon={faAnglesLeft} /></p></button>
-                        <div className='mt-12 grid grid-cols-3 gap-2 border-b-2'>
+                        <button className='bg-Primary text-white flex gap-2 justify-center m-auto lg:w-3/12 w-8/12 py-3 rounded-full mt-6'>Get Started <p className='-rotate-180'><FontAwesomeIcon icon={faAnglesLeft} /></p></button>
+                        <div className='mt-12 grid lg:grid-cols-3 grid-cols-2  gap-2 border-b-2 '>
                             <p className='border-b-2 border-Primary py-2 font-pretendard' ><span className='text-Primary'><FontAwesomeIcon icon={faUser} /></span> For individuals</p>
                             <p className='hover:border-b-2 border-Primary font-pretendard text-gray-600 hover:text-gray-900 py-2'><span className='text-Primary'><FontAwesomeIcon icon={faUser} /></span> For Couples</p>
                             <p className='hover:border-b-2 border-Primary font-pretendard text-gray-600 hover:text-gray-900 py-2'><span className='text-Primary'><FontAwesomeIcon icon={faUser} /></span> For Advisers</p>
@@ -78,14 +72,14 @@ const home = () => {
                     <img src={Dashbord} className="w-full h-auto" alt="" />
 
                     {/* Bottom blur overlay */}
-                    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t to-[#fcfcfcc7] from-[#fcfcfceb] z-10" />
+                    <div className="absolute bottom-0 left-0 w-full xl:h-32 lg:h-24 h-16 bg-gradient-to-t to-[#fcfcfcc7] from-[#fcfcfceb] z-10" />
                 </div>
             </div>
             <Slider />
             <div className=' border-x-2  border-gray-100 m-auto text-center mt-12'>
                 <div className='border-b-2 border-gray-100'>
                     <div className='border-x-2 w-11/12 m-auto border-gray-100'>
-                        <h1 className='m-auto text-5xl mt-4 py-3 leading-[60px] font-semibold '>
+                        <h1 className='m-auto xl:xl:text-5xl lg:text-4xl sm:text-2xl text-xl  mt-4 py-3 lg:leading-[60px] font-semibold '>
                             Bring <span className="text-Primary italic font-serif font-light tracking-normal">order</span> to <br />
                             the chaos
                         </h1>
@@ -93,12 +87,12 @@ const home = () => {
                 </div>
                 <div className='w-11/12 m-auto border-x-2 pb-12 border-gray-100'>
                     <img src={home2Img} alt="" className='w-full' />
-                    <div className='mt-24 flex border-t-2 border-r-2 items-center border-gray-100 h-56 w-10/12 m-auto'>
-                        <div className='border-r-2 border-gray-100 w-4/12 p-4'>
+                    <div className='mt-24 flex sm:flex-row flex-col border-t-2 border-r-2 items-center border-gray-100 h-56 w-10/12 m-auto'>
+                        <div className='border-r-2 border-gray-100 sm:w-4/12 w-11/12 lg:block hidden p-4'>
                             <img src={client} alt="" className='m-auto' />
                         </div>
-                        <div className='w-8/12 text-start p-4'>
-                            <p className='text-[30px] font-[600]'>
+                        <div className='lg:w-8/12 w-11/12 text-start p-4'>
+                            <p className='xl:text-[30px] lg:text-xl sm:text-lg text-sm font-[600]'>
                                 “Tried Strabo for the first time today. Managing stocks and crypto together is a game changer. No going back now”
                             </p>
 
@@ -110,11 +104,11 @@ const home = () => {
             <div className=' border-y-2 w-full border-gray-100 m-auto '>
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
                     <div className='w-9/12  m-auto border-gray-100'>
-                        <h1 className='m-auto text-5xl  py-10  leading-[60px] font-semibold '>
+                        <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl  py-10  lg:leading-[60px] font-semibold '>
                             Reliable security at  <br />
                             an <span className="text-Primary italic font-serif font-light tracking-normal">enterprise level</span>
                         </h1>
-                        <div className='grid grid-cols-2 gap-3 py-3'>
+                        <div className='grid lg:grid-cols-2 grid-cols-1 gap-3 py-3'>
                             <div className='border-l-2  py-4 border-gray-100'>
                                 <p className='ml-12'>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +189,7 @@ const home = () => {
                                     </svg>
 
                                 </p>
-                                <h1 className="text-2xl md:text-4xl font-semibold text-gray-800">
+                                <h1 className="xl:text-5xl lg:text-4xl sm:text-2xl text-xl font-semibold text-gray-800">
                                     Discover new ways to <br />
                                     grow your <span className="text-Primary italic font-serif font-light tracking-normal">wealth</span>
                                 </h1>
@@ -205,7 +199,7 @@ const home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='grid grid-cols-3 border-x-2 border-gray-100 gap-3'>
+                        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  border-x-2 border-gray-100 gap-3'>
                             <div className=' p-4 border-gray-100'>
                                 <p className='leading-loose font-semibold'>
                                     Infrastructure Investments
@@ -240,20 +234,20 @@ const home = () => {
                     <div className='w-9/12 m-auto  '>
                         <div className='w-full border-x-2 border-gray-100'>
                             <div className="">
-                                <div className='border-b-2 border-gray-100 flex items-center'>
-                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-4/12'>
+                                <div className='border-b-2 border-gray-100 lg:flex-row flex flex-col items-center'>
+                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 lg:w-4/12 w-full'>
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
                                         </svg>
                                         <p className='text-sm text-gray-400'>Stable, long-term returns from</p>
                                     </p>
-                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 w-2/12'>
+                                    <p className='flex items-center gap-2 p-2 border-r-2 border-gray-100 lg:w-2/12 w-full'>
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
                                         </svg>
                                         <p className='text-sm text-gray-400'>volatility</p>
                                     </p>
-                                    <p className='flex items-center gap-2 p-2  w-4/12'>
+                                    <p className='flex items-center gap-2 p-2  lg:w-4/12 w-full'>
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00001 0.583496C3.45618 0.583496 0.583344 3.45634 0.583344 7.00016C0.583344 10.544 3.45618 13.4168 7.00001 13.4168C10.5438 13.4168 13.4167 10.544 13.4167 7.00016C13.4167 3.45634 10.5438 0.583496 7.00001 0.583496ZM10.0375 5.66264C10.2653 5.43484 10.2653 5.06549 10.0375 4.83768C9.80968 4.60988 9.44034 4.60988 9.21253 4.83768L6.12501 7.92521L4.78749 6.58768C4.55968 6.35988 4.19034 6.35988 3.96253 6.58768C3.73473 6.81549 3.73473 7.18484 3.96253 7.41264L5.71253 9.16264C5.94034 9.39045 6.30968 9.39045 6.53749 9.16264L10.0375 5.66264Z" fill="#0D9488" />
                                         </svg>
@@ -262,7 +256,7 @@ const home = () => {
                                 </div>
                             </div>
                             <div className=' mt-24 text-center'>
-                                <button className='w-4/12 bg-gray-800 flex items-center gap-3 m-auto rounded-full hover:bg-gray-700 text-white text-[13px] p-4'>
+                                <button className='lg:w-4/12 sm:w-9/12 w-full bg-gray-800 flex items-center gap-3 m-auto rounded-full hover:bg-gray-700 text-white text-[13px] p-4'>
                                     <p className='text-gray-500 border-r border-gray-500 w-5/12'>Coming soon!</p>
                                     <p className='text-white  w-7/12 gap-2 flex items-center'>Be the first to know <FontAwesomeIcon icon={faArrowRight} /></p>
                                 </button>
@@ -270,7 +264,7 @@ const home = () => {
                         </div>
                         <br /><br />
                         <div className="text-start mt-6">
-                            <h1 className='m-auto text-5xl px-3  py-10  leading-[60px] font-semibold '>
+                            <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl px-3  py-10  leading-[60px] font-semibold '>
                                 Financial guidance  <br />
                                 an <span className="text-Primary italic font-serif font-light tracking-normal">the experts</span>
                             </h1>
@@ -285,7 +279,7 @@ const home = () => {
                     <div className='w-9/12  m-auto  text-center'>
                         <br /><br />
                         <div className="mt-6">
-                            <h1 className='m-auto text-4xl px-3 w-8/12 text-gray-900  py-10  leading-[60px] font-semibold '>
+                            <h1 className='m-auto lg:text-4xl sm:text-2xl text-lg px-3 lg:w-8/12 w-full text-gray-900  py-10  leading-[60px] font-semibold '>
                                 Tried Strabo? Making life easier managing my French & UK finances together 🙏
                                 <p className='text-gray-800 font-semibold tracking-wider text-sm mt-4'>Lucy Woolfenden<span className='text-gray-500 font-light'> : Founder, The Scale Up Collective</span></p>
                             </h1>
@@ -306,7 +300,7 @@ const home = () => {
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
                     <div className='w-11/12 m-auto  '>
                         <div className="text-start  flex items-center justify-between">
-                            <h1 className='m-auto text-5xl w-6/12 px-3 py-10  leading-[60px] font-semibold '>
+                            <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl w-6/12 px-3 py-10  leading-[60px] font-semibold '>
                                 We’re along for <br />
                                 <span className="text-Primary italic font-serif font-light tracking-normal">the ride</span>
                             </h1>

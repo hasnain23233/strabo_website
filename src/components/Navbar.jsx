@@ -4,7 +4,7 @@ import DropdownPlatfom from './DropdownPlatfom';
 import DropdownResourse from './DropdownResourse';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -16,18 +16,19 @@ const Navbar = () => {
 
     return (
         <div className="border-b-2 border-gray-100 font-inter">
-            <header className=" py-3     w-11/12 m-auto flex lg:justify-between lg:flex-row flex-col gap-2 lg:items-center">
+            <header className=" py-3     w-11/12 m-auto flex lg:justify-between lg:flex-row flex-col lg:gap-2 gap-6 lg:items-center">
                 <div className="flex items-center gap-2 lg:w-2/12 justify-between">
                     <p className='flex items-center gap-2 lg:w-2/12 w-8/12'>
                         <img src={Logo} alt="Logo" />
                         <Link to={'/'} className="text-xl font-semibold tracking-wider text-gray-800">strabo</Link>
                     </p>
                     <p onClick={handleMenuBtn} className='lg:hidden block'>
-                        <FontAwesomeIcon icon={faBars} className="text-2xl text-gray-700" />
+                        {menu ? <FontAwesomeIcon icon={faBars} className="text-2xl text-gray-700" /> :
+                            <FontAwesomeIcon icon={faTimes} className="text-2xl cursor-pointer" />}
                     </p>
                 </div>
 
-                <ul className={`w-6/12 text-sm flex justify-evenly lg:flex-row flex-col lg:items-center ${menu ? 'hidden lg:flex' : 'flex'} gap-4 relative`}>
+                <ul className={`w-6/12 text-sm flex justify-evenly lg:flex-row flex-col lg:items-center ${menu ? 'hidden lg:flex' : 'flex'} lg:gap-4 gap-6 relative`}>
                     <li>
                         <DropdownPlatfom />
                     </li>

@@ -15,13 +15,13 @@ const Customers = () => {
     return (
         <div className=' font-inter  bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
-                <div className=' border-x-2 border-gray-100 w-9/12 m-auto'>
-                    <div className='pt-12 text-center w-9/12 border-x-2 border-gray-50 m-auto'>
-                        <h1 className='m-auto text-5xl mt-4  leading-[60px] font-semibold '>
+                <div className=' border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
+                    <div className='pt-12 text-centerlg:w-9/12 w-11/12 border-x-2 border-gray-50 m-auto'>
+                        <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Meet the investor <br />
                             <span className="text-Primary italic font-serif font-light tracking-normal">building  the future</span> with Strabo
                         </h1>
-                        <p className='text-gray-500 text-xl mt-6 font-pretendard'>
+                        <p className='text-gray-500 lg:text-xl mt-6 font-pretendard'>
                             Trusted by thousands, from thrifty students to <br /> financial advisers and retirees
                         </p>
                     </div>
@@ -36,33 +36,33 @@ const Customers = () => {
                                 <img src={firstLogo} alt="" />
                             </div>
                         </div>
-                        <div className='flex items-end w-10/12 m-auto border-x-2 border-b-2 border-gray-100 justify-between'>
-                            <div className='px-4 w-6/12 '>
+                        <div className='flex items-end sm:flex-row flex-col w-10/12 m-auto border-x-2 border-b-2 border-gray-100 justify-between'>
+                            <div className='px-4 sm:w-6/12 w-full '>
                                 <div className='text-gray-400 leading-loose'> FINANCIAL ADVISER</div>
-                                <p className='text-3xl leading-[40px] mt-5'>Leveraging custom pages & widgets for Keyman Wealth retail clients</p>
+                                <p className='lg:text-3xl sm:text-2xl text-xl leading-[40px] mt-5'>Leveraging custom pages & widgets for Keyman Wealth retail clients</p>
                                 <button className='mt-5 text-gray-600'>Read case study <FontAwesomeIcon icon={faArrowRight} /></button> <br /> <br />
                             </div>
-                            <div className='w-6/12'>
+                            <div className='sm:w-6/12 w-full'>
                                 <img src={Custome1Img} alt="" />
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 mt-5 w-10/12 m-auto gap-3 justify-between'>
+                        <div className='grid lg:grid-cols-2 grid-cols-1 mt-5 w-10/12 m-auto gap-3 justify-between'>
                             <div className='px-4 w-full border-2 border-gray-100 bg-gray-50 hover:bg-white rounded-lg '>
                                 <div className='text-gray-800 h-12 font-semibold text-sm leading-loose border-b-2 flex items-center gap-2'>
                                     <img src={client1} alt="" className='w-1/12 rounded-md' /> <p>Jeremiah Johnson <span className='text-gray-400 border-l-2 px-3 font-light'>AI Consultant</span></p>
                                 </div>
                                 <div className='py-4'>
                                     <h1 className='text-gray-400 text-sm'>INDIVIDUAL</h1>
-                                    <p className='text-3xl leading-[40px] mt-5'>Managing personal assets across mainland Europe</p>
+                                    <p className='lg:text-3xl sm:text-2xl text-xl leading-[40px] mt-5'>Managing personal assets across mainland Europe</p>
                                     <button className='mt-5 text-Primary'>Read case study <FontAwesomeIcon icon={faArrowRight} /></button>
                                 </div>
                                 <div className='border-t-2 flex gap-4 border-gray-100'>
                                     <div className='w-2/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>3</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>3</h1>
                                         <p className='text-gray-500 text-sm'>countries</p>
                                     </div>
                                     <div className='w-6/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>7</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>7</h1>
                                         <p className='text-gray-500 text-sm'>asset classes consolidated</p>
                                     </div>
                                 </div>
@@ -73,16 +73,16 @@ const Customers = () => {
                                 </div>
                                 <div className='py-4'>
                                     <h1 className='text-gray-400 text-sm'>INDIVIDUAL</h1>
-                                    <p className='text-3xl leading-[40px] mt-5'>Building a crypto portfolio tracker with Strabo</p>
+                                    <p className='lg:text-3xl sm:text-2xl text-xl leading-[40px] mt-5'>Building a crypto portfolio tracker with Strabo</p>
                                     <button className='mt-5 '>Read case study <FontAwesomeIcon icon={faArrowRight} /></button>
                                 </div>
                                 <div className='border-t-2 flex gap-4 border-gray-100'>
                                     <div className='w-4/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>30+</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>30+</h1>
                                         <p className='text-gray-500 text-sm'>cryptocurrencies</p>
                                     </div>
                                     <div className='w-6/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>50%</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>50%</h1>
                                         <p className='text-gray-500 text-sm'>time saved vs old dashboard</p>
                                     </div>
                                 </div>
@@ -95,33 +95,33 @@ const Customers = () => {
                                 <img src={secondLogo} alt="" />
                             </div>
                         </div>
-                        <div className='flex items-end w-10/12 m-auto border-x-2 border-b-2 flex-row-reverse border-gray-100 justify-between'>
-                            <div className='px-4 w-6/12 '>
+                        <div className='flex items-end sm:flex-row-reverse flex-col w-10/12 m-auto border-x-2 border-b-2 border-gray-100 justify-between'>
+                            <div className='px-4 sm:w-6/12 w-full  '>
                                 <div className='text-gray-400 leading-loose'> FINANCIAL ADVISER</div>
                                 <p className='text-3xl leading-[40px] mt-5'>Providing real time quarterly portfolio reporting for individual clients</p>
                                 <button className='mt-5 text-gray-600'>Read case study <FontAwesomeIcon icon={faArrowRight} /></button> <br /> <br />
                             </div>
-                            <div className='w-6/12'>
+                            <div className='sm:w-6/12 w-full '>
                                 <img src={Custome2Img} alt="" />
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 mt-5 w-10/12 m-auto gap-3 justify-between'>
+                        <div className='grid lg:grid-cols-2 grid-cols-1 mt-5 w-10/12 m-auto gap-3 justify-between'>
                             <div className='px-4 w-full border-2 border-gray-100 bg-gray-50 hover:bg-white rounded-lg '>
                                 <div className='text-gray-800 h-12 font-semibold  text-sm leading-loose border-b-2 flex items-center gap-2'>
-                                    <img src={client3} alt="" className='w-1/12 rounded-md' /> <p>Lucy Woolfenden <span className='text-gray-400 border-l-2 px-3 font-light'>Founder, The Scale Up Collective</span></p>
+                                    <img src={client3} alt="" className='w-1/12 rounded-md' /> <p className='text-sm'>Lucy Woolfenden <span className='text-gray-400 border-l-2 px-3 font-light'>Founder, The Scale Up Collective</span></p>
                                 </div>
                                 <div className='py-4'>
                                     <h1 className='text-gray-400 text-sm'>INDIVIDUAL</h1>
-                                    <p className='text-3xl leading-[40px] mt-5'>Switching seamlessly between British and French accounts</p>
+                                    <p className='lg:text-3xl sm:text-2xl text-xl leading-[40px] mt-5'>Switching seamlessly between British and French accounts</p>
                                     <button className='mt-5 text-Primary'>Read case study <FontAwesomeIcon icon={faArrowRight} /></button>
                                 </div>
                                 <div className='border-t-2 flex gap-4 border-gray-100'>
-                                    <div className='w-2/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>2</h1>
+                                    <div className='sm:w-2/12 w-5/12 border-t-2 border-gray-500'>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>2</h1>
                                         <p className='text-gray-500 text-sm'>currencies</p>
                                     </div>
                                     <div className='w-3/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>60%</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>60%</h1>
                                         <p className='text-gray-500 text-sm'>more efficient</p>
                                     </div>
                                 </div>
@@ -132,17 +132,17 @@ const Customers = () => {
                                 </div>
                                 <div className='py-4'>
                                     <h1 className='text-gray-400 text-sm'>INDIVIDUAL</h1>
-                                    <p className='text-3xl leading-[40px] mt-5'>Managing growth stock investment portfolio
+                                    <p className='lg:text-3xl sm:text-2xl text-xl leading-[40px] mt-5'>Managing growth stock investment portfolio
                                     </p>
                                     <button className='mt-5 '>Read case study <FontAwesomeIcon icon={faArrowRight} /></button>
                                 </div>
                                 <div className='border-t-2 flex gap-4 border-gray-100'>
                                     <div className='w-5/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>3x</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>3x</h1>
                                         <p className='text-gray-500 text-sm'>more stock information</p>
                                     </div>
                                     <div className='w-6/12 border-t-2 border-gray-500'>
-                                        <h1 className='text-4xl text-gray-800 font-semibold leading-relaxed'>20%</h1>
+                                        <h1 className='lg:text-4xl sm:text-2xl text-xl text-gray-800 font-semibold leading-relaxed'>20%</h1>
                                         <p className='text-gray-500 text-sm'>faster metrics updates</p>
                                     </div>
                                 </div>

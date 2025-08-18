@@ -53,7 +53,7 @@ const home = () => {
                             </svg>
                             Strabo AI is live
                         </span>
-                        <h1 className='m-auto xl:xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
+                        <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Manage your wealth <br />
                             like <span className="text-Primary italic font-serif font-light tracking-normal">never before</span>
                         </h1>

@@ -40,7 +40,7 @@ const DropdownPlatfom = () => {
                         <ul className='w-7/12 border-r-2  flex flex-col justify-between border-gray-100 px-1 py-2'>
                             <h1 className='text-gray-300 leading-loose uppercase text-sm '>Platform</h1>
                             <li>
-                                <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
+                                <Link to="/feature" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>
                                     <div className='flex gap-2  items-center'>
                                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2_14364)">
@@ -65,7 +65,7 @@ const DropdownPlatfom = () => {
                                         </div>
                                     </div>
                                     <p><FontAwesomeIcon icon={faArrowRight} className='text-lg' /></p>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#" className='flex justify-between items-center p-3 hover:bg-gray-50 rounded-lg'>

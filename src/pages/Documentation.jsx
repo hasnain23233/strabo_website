@@ -1,37 +1,22 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesLeft, faLink } from '@fortawesome/free-solid-svg-icons';
-import { faXTwitter, faFacebookF, faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
-import image1 from '../assets/getstarted/image1.png'
-import image2 from '../assets/getstarted/image2.png'
-import image3 from '../assets/getstarted/image3.png'
-import image4 from '../assets/getstarted/image4.png'
-import image5 from '../assets/getstarted/image5.png'
 
 const Documentation = () => {
     return (
         <div className=' font-inter  bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
-                <div className=' border-x-2 border-gray-100 w-9/12 m-auto '>
-                    <div className='pt-12 py-28 text-center w-9/12 border-x-2 border-gray-100 m-auto'>
-                        <h1 className='m-auto text-5xl mt-4  leading-[60px] font-semibold '>
+                <div className=' border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto '>
+                    <div className='pt-12 py-28 text-center lg:w-9/12 w-11/12 border-x-2 border-gray-100 m-auto'>
+                        <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Documentation
                         </h1>
-                        <p className='text-gray-500 text-xl mt-6 font-pretendard'>
+                        <p className='text-gray-500 lg:text-xl sm:text-lg text-sm mt-6 font-pretendard'>
                             Short explanation about blog and articles will be placed right over here and this is just a placement text or dummies
                         </p>
                     </div>
                 </div>
-                <div className="relative w-11/12 m-auto overflow-hidden">
-                    {/* <img src={Dashbord} className="w-full h-auto" alt="" /> */}
-
-                    {/* Bottom blur overlay */}
-                    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t to-[#fcfcfcc7] from-[#fcfcfceb] z-10" />
-                </div>
             </div>
-            <div className="w-10/12 m-auto flex gap-4    mt-12">
-                <div className="w-4/12">
+            <div className="w-10/12 m-auto flex lg:flex-row flex-col gap-4    mt-12">
+                <div className="lg:w-4/12 w-full">
                     <div>
                         <h1>Table of contents</h1>
                         <h1 className='py-3 text-gray-500'>Legal</h1>
@@ -48,7 +33,7 @@ const Documentation = () => {
                         <h1 className='leading-loose text-gray-500'>Advice</h1>
                     </div>
                 </div>
-                <div className='w-8/12'>
+                <div className='lg:w-8/12 w-full'>
                     <div>
                         <h1 className='text-4xl text-gray-700 font-semibold'>Terms of Use</h1>
                         <p className='text-gray-600 mt-3'>
@@ -182,7 +167,7 @@ const Documentation = () => {
             <div className=' border-b-2 w-full border-gray-100 m-auto '>
                 <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
                     <div className='w-full m-auto text-center '>
-                        <h1 className='m-auto text-4xl text-center pt-12   leading-[60px] font-semibold '>
+                        <h1 className='m-auto lg:text-4xl sm:text-2xl text-xl text-center pt-12   lg:leading-[60px] font-semibold '>
                             Join our  <span className="text-Primary italic font-serif font-light tracking-normal">newsletter</span>
                         </h1>
                         <p className='text-gray-600'>Want to keep track of what we're up to without the commitment? <br /> You can sign up to the newsletter below.</p>

@@ -16,7 +16,7 @@ const Customers = () => {
         <div className=' font-inter  bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
                 <div className=' border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
-                    <div className='pt-12 text-centerlg:w-9/12 w-11/12 border-x-2 border-gray-50 m-auto'>
+                    <div className='pt-12 text-center lg:w-9/12 w-11/12 border-x-2 border-gray-50 m-auto'>
                         <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Meet the investor <br />
                             <span className="text-Primary italic font-serif font-light tracking-normal">building  the future</span> with Strabo

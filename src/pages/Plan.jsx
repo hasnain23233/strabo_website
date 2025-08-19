@@ -12,27 +12,27 @@ const Plan = () => {
         <div className='font-inter bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)]'>
                 <div className=''>
-                    <div className='border-x-2 border-gray-100 w-9/12 m-auto'>
+                    <div className='border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
 
                         {/* Heading Section */}
-                        <div className='py-12  text-center w-9/12 border-x-2 border-gray-100 m-auto'>
-                            <h1 className='m-auto text-5xl mt-4 leading-[60px] font-semibold'>
+                        <div className='py-12  text-center lg:w-9/12 w-11/12 border-x-2 border-gray-100 m-auto'>
+                            <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4 lg:leading-[60px] font-semibold'>
                                 <span className="text-Primary italic font-serif font-light tracking-normal">We’re with you </span> every <br />
                                 step of the way
                             </h1>
 
                             {/* Toggle Buttons */}
-                            <div className='bg-gray-100 flex items-center font-semibold px-2 w-8/12 m-auto mt-3 text-gray-500 rounded-xl h-12'>
-                                <button onClick={handleOnClick} className={`h-10 ${text ? 'bg-white border' : ''} w-6/12  rounded-md`}>Monthly</button>
-                                <button onClick={handleOnClick} className={`h-10 ${!text ? 'bg-white border' : ''} w-6/12  rounded-md`}>Annual <span className="text-Primary">-35%</span></button>
+                            <div className='bg-gray-100 grid lg:grid-cols-2 grid-cols-1 font-semibold px-2 w-8/12 m-auto mt-3 lg:py-0 py-2 text-gray-500 rounded-xl'>
+                                <button onClick={handleOnClick} className={`h-10 ${text ? 'bg-white border' : ''}   rounded-md`}>Monthly</button>
+                                <button onClick={handleOnClick} className={`h-10 ${!text ? 'bg-white border' : ''}   rounded-md`}>Annual <span className="text-Primary">-35%</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="border-y-2 border-gray-100 ">
-                    <div className="flex justify-center items-start gap-8 ">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 items-start gap-8 ">
                         {/* Pro Plan */}
-                        <div className="bg-white shadow-xl rounded-2xl p-6 w-80">
+                        <div className="bg-white shadow-xl rounded-2xl p-6 w-11/12 m-auto">
                             <h2 className="text-xl font-semibold mb-2">Pro Plan</h2>
                             <p className="text-gray-500 mb-4">Unlock Strabo's full potential.</p>
                             <div className="text-3xl font-bold mb-4 ">
@@ -53,7 +53,7 @@ const Plan = () => {
                         </div>
 
                         {/* Adviser Plan */}
-                        <div className=" rounded-2xl p-6 w-80">
+                        <div className=" rounded-2xl p-6 w-11/12 m-auto">
                             <h2 className="text-xl font-semibold mb-2">Adviser Plan</h2>
                             <p className="text-gray-500 mb-4">Your adviser-client portal</p>
                             <div className="text-3xl font-bold mb-4">
@@ -77,14 +77,14 @@ const Plan = () => {
                 <Slider />
             </div>
             <div className='border-y-2  border-gray-100 text-center'>
-                <h1 className='m-auto w-10/12 border-x-2 py-12 text-5xl  leading-[60px] font-semibold'>
+                <h1 className='m-auto w-10/12 border-x-2 py-12 xl:text-5xl lg:text-4xl sm:text-2xl text-xl lg:leading-[60px] font-semibold'>
                     Our ears are <span className="text-Primary italic font-serif font-light tracking-normal">burning </span>
                 </h1>
             </div>
             <div className='border-y-2  border-gray-100 text-center'>
 
                 <img src={img1} alt="" className='w-10/12 m-auto border ' />
-                <button className="border w-2/12 mt-6 border-gray-300 hover:bg-gray-100 py-2 rounded-full bg-white font-medium mb-6">
+                <button className="border xl:w-2/12 lg:w-5/12 sm:w-8/12 w-11/12 mt-6 border-gray-300 hover:bg-gray-100 py-2 rounded-full bg-white font-medium mb-6">
                     See all case studies →
                 </button>
             </div>

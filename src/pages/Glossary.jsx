@@ -52,9 +52,9 @@ const Glossary = () => {
     <div className="font-inter bg-[#fcfefe]">
       {/* Top Header Section */}
       <div className="bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)]">
-        <div className="border-x-2 border-gray-100 w-9/12 m-auto">
-          <div className="pt-12 text-center w-9/12 py-20 border-x-2 border-gray-100 m-auto">
-            <h1 className="m-auto text-5xl mt-4 leading-[60px] font-semibold">
+        <div className="border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto">
+          <div className="pt-12 text-center lg:w-9/12 w-11/12 py-20 border-x-2 border-gray-100 m-auto">
+            <h1 className="m-auto  xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4 leading-[60px] font-semibold">
               Glossary
             </h1>
             <p className="text-gray-500 w-11/12 m-auto mt-6 font-pretendard">
@@ -102,7 +102,7 @@ const Glossary = () => {
       <div className=' border-b-2 w-full border-gray-100 m-auto '>
         <div className='border-x-2 border-gray-100 w-11/12 m-auto'>
           <div className='w-full m-auto text-center '>
-            <h1 className='m-auto text-4xl text-center pt-12   leading-[60px] font-semibold '>
+            <h1 className='m-auto  lg:text-4xl sm:text-2xl text-xl text-center pt-12   lg:leading-[60px] font-semibold '>
               Join hundreds of advisers <br />  <span className="text-Primary italic font-serif font-light tracking-normal">winning</span> with Strabo
             </h1>
             <p className='text-gray-600'>Request a free demo and see how Strabo can elevate <br /> your advisory game</p>

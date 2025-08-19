@@ -7,20 +7,20 @@ const Feature = () => {
     return (
         <div className='font-inter bg-[#fcfefe]'>
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)] '>
-                <div className=' border-x-2 border-gray-100 w-9/12 m-auto'>
-                    <div className='py-16  text-center w-9/12 border-x-2 border-gray-100 m-auto'>
-                        <h1 className='m-auto text-5xl mt-4  leading-[60px] font-semibold '>
+                <div className=' border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
+                    <div className='py-16  text-center lg:w-9/12 w-11/12 border-x-2 border-gray-100 m-auto'>
+                        <h1 className='m-auto xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4  lg:leading-[60px] font-semibold '>
                             Core  <span className="text-Primary italic font-serif font-light tracking-normal">features</span> <br />
 
                         </h1>
-                        <p className='text-gray-500 text-xl mt-6 font-pretendard'>
+                        <p className='text-gray-500 lg:text-xl sm:text-lg text-sm mt-6 font-pretendard'>
                             Discover what makes the Strabo platform uniquere.
                         </p>
-                        <div className='flex items-center justify-center gap-2 mt-4'>
-                            <p className='w-3/12'>
+                        <div className='flex items-center sm:flex-row flex-col justify-center gap-2 mt-4'>
+                            <p className='xl:w-3/12 lg:w-5/12 sm:w-7/12 w-11/12'>
                                 <button className='bg-Primary text-white flex gap-2 justify-center m-auto w-full  py-3 rounded-full'>Get Started <p className='-rotate-180'><FontAwesomeIcon icon={faAnglesLeft} /></p></button>
                             </p>
-                            <p className='w-3/12'>
+                            <p className='xl:w-3/12 lg:w-5/12 sm:w-7/12 w-11/12'>
                                 <button className='bg-white text-gray-600 flex gap-2 justify-center m-auto w-full  py-3 rounded-full border'>Contact us </button>
                             </p>
                         </div>
@@ -29,9 +29,9 @@ const Feature = () => {
             </div>
             <div className='border-x-2 border-gray-100 w-10/12 m-auto'>
                 <div className=" flex items-center  p-2">
-                    <div className=" px-12 py-28 w-6/12">
-                        <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                    <div className=" lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
+                        <div className='w-full'>
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl  font-bold text-gray-900 mb-4">
                                 Connect Manual and Synced Accounts
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -66,12 +66,12 @@ const Feature = () => {
                         </div>
 
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center flex-row-reverse  p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className="lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl font-bold text-gray-900 mb-4">
                                 Account Tagging
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -104,12 +104,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white lg:block hidden shadow-xl rounded-xl'></div>
                 </div>
                 <div className=" flex items-center  p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className=" lg:px-12 px-2 py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl  font-bold text-gray-900 mb-4">
                                 Currency switcher
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -136,12 +136,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center flex-row-reverse p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className=" lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl  font-bold text-gray-900 mb-4">
                                 Privacy toggle
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -168,12 +168,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className=" lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl  font-bold text-gray-900 mb-4">
                                 Pages
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -206,12 +206,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center flex-row-reverse p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className="  lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl  font-bold text-gray-900 mb-4">
                                 Flexible widgets
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -244,12 +244,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className="  lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl font-bold text-gray-900 mb-4">
                                 Strabo AI
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -282,12 +282,12 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
                 <div className=" flex items-center flex-row-reverse p-2">
-                    <div className=" px-12 py-28 w-6/12">
+                    <div className=" lg:px-12 px-2  py-28 lg:w-6/12 w-11/12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            <h2 className="lg:text-3xl sm:text-2xl text-xl font-bold text-gray-900 mb-4">
                                 Collectibles
                             </h2>
                             <p className="text-gray-600 mb-6">
@@ -314,7 +314,7 @@ const Feature = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl'></div>
+                    <div className='h-96 w-6/12 bg-white shadow-xl rounded-xl lg:block hidden'></div>
                 </div>
             </div>
             <div className=' border-y-2 w-full border-gray-100 m-auto '>

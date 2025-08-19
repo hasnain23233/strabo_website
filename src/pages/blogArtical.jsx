@@ -55,12 +55,12 @@ const BlogArtical = () => {
         <div className='font-inter bg-[#fcfefe]'>
             {/* Hero Section */}
             <div className='bg-[radial-gradient(circle_at_center,_#F5FBFC,_#fcfefe)]'>
-                <div className='border-x-2 border-gray-100 w-9/12 m-auto'>
-                    <div className='py-28 text-center w-9/12 border-x-2 border-gray-100 m-auto'>
-                        <h1 className='m-auto text-5xl mt-4 leading-[60px] font-semibold'>
+                <div className='border-x-2 border-gray-100 lg:w-9/12 w-11/12 m-auto'>
+                    <div className='py-28 text-center lg:w-9/12 w-11/12 border-x-2 border-gray-100 m-auto'>
+                        <h1 className='m-auto  xl:text-5xl lg:text-4xl sm:text-2xl text-xl mt-4 lg:leading-[60px] font-semibold'>
                             Blogs and Articles
                         </h1>
-                        <p className='text-gray-500 text-xl mt-6 font-pretendard'>
+                        <p className='text-gray-500 lg:text-xl sm:text-lg text-sm  mt-6 font-pretendard'>
                             Grab a coffee & have a browse
                         </p>
                     </div>
@@ -68,8 +68,8 @@ const BlogArtical = () => {
             </div>
 
             {/* Categories + Search */}
-            <div className='w-11/12 m-auto flex items-center gap-4 justify-between mt-10'>
-                <ul className='flex items-center justify-between gap-3 w-10/12'>
+            <div className='w-11/12 m-auto flex items-center lg:flex-row flex-col gap-4 justify-between mt-10'>
+                <ul className='flex lg:items-center justify-between lg:flex-row flex-col gap-3 lg:w-10/12 w-full'>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>All Categories</li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'><Link to={'/InvestmentFeatures'}> Investing</Link></li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Financial Independence</li>
@@ -77,7 +77,7 @@ const BlogArtical = () => {
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Saving</li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Guides</li>
                 </ul>
-                <div className='w-2/12 relative'>
+                <div className=';g:w-2/12 w-full relative'>
                     <input
                         type="text"
                         className='border rounded-full h-8 w-full focus:outline-none text-sm px-10'
@@ -88,7 +88,7 @@ const BlogArtical = () => {
                     </p>
                 </div>
             </div>
-            <div className="w-11/12 mx-auto grid md:grid-cols-2 gap-6 mt-10">
+            <div className="w-11/12 mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 mt-10">
                 {cardsUpper.map((card, index) => (
                     <div key={index} className="bg-white shadow rounded-lg overflow-hidden flex flex-col sm:flex-row">
                         {/* Image */}

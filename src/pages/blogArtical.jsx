@@ -77,7 +77,7 @@ const BlogArtical = () => {
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Saving</li>
                     <li className='border rounded-full hover:bg-gray-900 hover:text-white text-sm text-center py-2 px-8'>Guides</li>
                 </ul>
-                <div className=';g:w-2/12 w-full relative'>
+                <div className='lg:w-2/12 w-full relative'>
                     <input
                         type="text"
                         className='border rounded-full h-8 w-full focus:outline-none text-sm px-10'
